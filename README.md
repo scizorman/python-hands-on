@@ -66,7 +66,7 @@ Linux において，Python の実行環境を管理するためのツール。2
 $ pip install -U pip
 ```
 
-`pip` を用いて，`pipenv` をインストールする
+`pip` を用いて，`Pipenv` をインストールする
 ```bash
 $ pip install pipenv
 ```
@@ -76,7 +76,7 @@ Python のパッケージを管理するためのツール。サードパティ 
 
 > 参考：https://www.sejuku.net/blog/50417
 
-#### `pipenv` とは
+#### `Pipenv` とは
 簡単に Python の開発環境を作れる方法を提供するツール。`Pipfile` に対してパッケージの追加および削除を行うのに加え，自動でプロジェクト用の仮想環境を作成し，管理する。また `Pipfile.lock` も同時に生成し，これを利用して常にビルドが同じ結果になるようにする。
 
 > 参考：https://pipenv-ja.readthedocs.io/ja/translate-ja/
