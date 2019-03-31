@@ -1,4 +1,6 @@
 # 基本課題
+[JupyterLab](https://jupyterlab.readthedocs.io/en/stable/)を用いて，以下の課題に取り組もう。
+
 1. aaa
 1. bbb
 1. bbb
@@ -10,7 +12,14 @@
 1. bbb
 1. bbb
 
-- 課題ごとにファイルを作成するか，複数の課題を一つのファイルにまとめるかは任意。
-- 少し難しいが，設計の綺麗さ，可読性を意識してコーディングすること
 
-> 参考：https://qiita.com/NoriakiOshita/items/e60ab5bb01b90d927ae5
+### セットアップ
+#### 1. Pipenvを用いて，実行環境の構築・必要なパッケージのインストールを行う
+```bash
+$ pipenv install
+```
+
+#### 2. `JupyterLab`を実行する
+```bash
+$ pipenv run jupyter lab
+```
