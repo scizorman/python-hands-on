@@ -61,26 +61,59 @@ Linux において，Python の実行環境を管理するためのツール。2
 
 
 ### 3. `Pipenv` のインストール
-`pip` をアップデートする
+1. `Homebrew` を用いて `pipenv` をインストール
 ```bash
-$ pip install -U pip
+$ brew install pipenv
 ```
 
-`pip` を用いて，`pipenv` をインストールする
+2. `Pipenv` を用いて Python の仮想環境を作成
 ```bash
-$ pip install pipenv
+# 仮想環境の名前は何でも OK です
+$ mkdir py37-env && cd py37-env
+$ pipenv --python 3.7.2
 ```
 
-#### `pip` とは
-Python のパッケージを管理するためのツール。サードパティ (公式が配布していないパッケージ) を管理するのに用いる。
+3. 仮想環境に Python パッケージをインストール
+```bash
+# ここでは NumPy を入れてみます
+$ pipenv install numpy
+```
 
-> 参考：https://www.sejuku.net/blog/50417
+4. 仮想環境で Python を起動 & パッケージを使用
+```bash
+$ pipenv run python
+>>> import numpy as np
+```
 
 #### `pipenv` とは
-簡単に Python の開発環境を作れる方法を提供するツール。`Pipfile` に対してパッケージの追加および削除を行うのに加え，自動でプロジェクト用の仮想環境を作成し，管理する。また `Pipfile.lock` も同時に生成し，これを利用して常にビルドが同じ結果になるようにする。
+簡単に Python の開発環境を作れる方法を提供するツール。
+`Pipfile` に対してパッケージの追加および削除を行うのに加え，自動でプロジェクト用の仮想環境を作成し，管理する。
+また `Pipfile.lock` も同時に生成し，これを利用して常にビルドが同じ結果になるようにする。
 
-> 参考：https://pipenv-ja.readthedocs.io/ja/translate-ja/
+> 参考：https://pipenv-ja.readthedocs.io
 
+### (4. `Pipenv` を使わない場合)
+仮想環境を使わない場合、2. でインストールした Python に対して、`pip` でパッケージをインストールすることになります。
+`Pip` は pyenv で Python をインストールした際に付属しています。
+```bash
+# ここでは NumPy を入れてみます
+$ pip install numpy
+$ python
+>>> import numpy as np
+```
+
+`Pip` は Python パッケージを pyenv でインストールした Python の直下にインストールするツール、`pipenv` は仮想環境下にインストールするツールと覚えておけば良いです。
+`Pip` の場合、環境構築が簡単な反面、何らかの理由で環境が壊れてしまった場合、Python ごとアンインストールする必要が出てくるかもしれません。
+また、同じバージョンの Python で、異なるバージョンの Python パッケージを複数プロジェクトで使い分けるといったことができません。
+その点、`pipenv` を使った環境では、何か起きたら仮想環境の削除→再作成を気軽に行うことができます。
+また、各仮想環境は完全独立なので、あるプロジェクトで起きた不具合が他に波及する、といったことがなく安全です。
+特段の理由がない限り、`pipenv` で管理しておくのが良いでしょう。
+
+#### `pip` とは
+Python のパッケージを管理するためのツール。
+サードパティ (公式が配布していないパッケージ) を管理するのに用いる。
+
+> 参考：https://www.sejuku.net/blog/50417
 
 ### テキストエディタ
 #### テキストエディタとは？
