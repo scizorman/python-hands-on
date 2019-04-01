@@ -1,16 +1,11 @@
 # 基本課題
-[JupyterLab](https://jupyterlab.readthedocs.io/en/stable/)を用いて，以下の課題に取り組もう。
+`JupyterLab`を用いて，ノートブックに書かれている課題に取り組もう。
 
-1. aaa
-1. bbb
-1. bbb
-1. bbb
-1. bbb
-1. bbb
-1. bbb
-1. bbb
-1. bbb
-1. bbb
+### `JupyterLab` とは
+プログラムを実行し，実行結果を記録できる Web アプリケーション。
+データ解析や機械学習に最適な統合開発環境である。
+
+> 参考：[JupyterLab 公式HP](https://jupyterlab.readthedocs.io/en/stable/)
 
 
 ### セットアップ
