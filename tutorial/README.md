@@ -34,29 +34,29 @@ $ cd ./a-lab-orientation
 $ git checkout -b feature/tutorial
 ```
 
-### 5. `sample.py` を更新する
+#### 5. `sample.py` を更新する
 `main 関数` を自由に書き換える。(e.g. 出力する文字列の変更)
 
-### 6. 変更を追加する
+#### 6. 変更を追加する
 ```bash
 $ git add ./tutorial/sample.py
 ```
 
-### 7. Git にコミットする
+#### 7. Git にコミットする
 ```bash
 $ git commit -m "[コミットメッセージ]"
 ```
 
-#### 例：main 関数の出力する文字列を変更した場合
+##### 例：main 関数の出力する文字列を変更した場合
 - [change] 出力する文字列を変更
 - [change] Change the string to output
 
 > 参考：https://qiita.com/itosho/items/9565c6ad2ffc24c09364
 
-### 8. GitHub にプッシュする
+#### 8. GitHub にプッシュする
 ```bash
 $ git push origin feature/tutorial
 ```
 
-### 9. 本家レポジトリの master ブランチにプルリクエストを送る
+#### 9. 本家レポジトリの master ブランチにプルリクエストを送る
 口頭で説明する。
