@@ -11,7 +11,8 @@
 ### セットアップ
 #### 1. Pipenvを用いて，実行環境の構築・必要なパッケージのインストールを行う
 ```bash
-$ pipenv install
+$ pipenv --python 3.7.2
+$ pipenv install -d
 ```
 
 #### 2. `JupyterLab`を実行する
