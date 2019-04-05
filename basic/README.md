@@ -5,7 +5,7 @@ JupyterLab を用いて，ノートブックに書かれている課題に取り
 プログラムを実行し，実行結果を記録できる Web アプリケーション。
 データ解析や機械学習に最適な統合開発環境である。
 
-> 参考：[JupyterLab](https://jupyterlab.readthedocs.io/en/stable/)
+> 参考：[JupyterLab 公式ドキュメント](https://jupyterlab.readthedocs.io/en/stable/)
 
 
 ### セットアップ
