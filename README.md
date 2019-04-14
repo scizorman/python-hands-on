@@ -67,7 +67,7 @@ Linux において，Python の実行環境を管理するためのツール。
 
 
 ### 3. Poetry のインストール
-`pip` を用いて `Poetry` をインストール
+`Pip` を用いて `Poetry` をインストール
 ```bash
 $ pip install poetry
 ```
