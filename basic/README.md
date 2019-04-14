@@ -9,15 +9,14 @@ JupyterLab を用いて，ノートブックに書かれている課題に取り
 
 
 ### セットアップ
-#### 1. Pipenv を用いて，実行環境の構築・必要なパッケージのインストールを行う
+#### 1. Poetry を用いて，実行環境の構築・必要なパッケージのインストールを行う
 ```bash
-$ pipenv --python 3.7.2
-$ pipenv install -d
+$ poetry install
 ```
 
 #### 2. JupyterLab を実行する
 ```bash
-$ pipenv run jupyter lab
+$ poetry run jupyter lab
 ```
 
 #### 3. JupyterLab 上で課題に取り組む

@@ -66,37 +66,39 @@ Linux において，Python の実行環境を管理するためのツール。
 > 参考：[pyenv とは](https://qiita.com/mogom625/items/b1b673f530a05ec6b423)
 
 
-### 3. Pipenv のインストール
-`Homebrew` を用いて `Pipenv` をインストール
+### 3. Poetry のインストール
+`pip` を用いて `Poetry` をインストール
 ```bash
-$ brew install pipenv
+$ pip install poetry
 ```
 
-`Pipenv` がデフォルトで用いる Python を指定する
+`Poetry` がデフォルトで用いる Python を指定する
 ```bash
-echo 'export PIPENV_PYTHON="$PYENV_ROOT/shims/python" >> ~/.bash_profile'
-source ~/.bash_profile
+# Poetry の設定ファイルを作成 (macOS: ~/Library/Application Support/pypoetry/config.toml)
+poetry config --list # Poetry の設定ファイルを作成
+# プロジェクト直下に仮想環境を作成するように設定
+poetry config settings.virtualenvs.in-project true
 ```
 
-#### `Pipenv` とは
-簡単に Python の開発環境を作れる方法を提供するツール。
-`Pipfile` に対してパッケージの追加および削除を行うのに加え，自動でプロジェクト用の仮想環境を作成し，管理する。
-また `Pipfile.lock` も同時に生成し，これを利用して常にビルドが同じ結果になるようにする。
+#### `Poetry` とは
+Pythonでの依存関係の管理やパッケージ化を行うためのツール。
+`pyproject.toml.` に対してパッケージの追加および削除を行うのに加え，プロジェクト用の仮想環境を作成し，管理する。
+また `poetry.lock` も同時に生成し，これを利用して常にビルドが同じ結果になるようにする。
 
-> 参考：[Pipenv 公式ドキュメント](https://pipenv-ja.readthedocs.io)
+> 参考：[Poetry 公式ドキュメント](https://poetry.eustace.io/docs/)
 
 
-### なぜ `Pipenv` を用いるのか？
+### なぜ `Poetry` を用いるのか？
 仮想環境を使わない場合、2. でインストールした Python に対して、`Pip` でパッケージをインストールすることになる。
 `Pip` は `pyenv` で Python をインストールした際に付属している。
-`Pip` は Python パッケージをインストールした Python の直下にインストールするツール、`Pipenv` は仮想環境下にインストールするツールと覚えておけば良い。
+`Pip` は Python パッケージをインストールした Python の直下にインストールするツール、`Poetry` は仮想環境下にインストールするツールと覚えておけば良い。
 
 `Pip` の場合、環境構築が簡単な反面、何らかの理由で環境が壊れてしまった場合、Python ごとアンインストールする必要が出てくるかもしれない。
 また、同じバージョンの Python で、異なるバージョンの Python パッケージを複数プロジェクトで使い分けるといったことができない。
 
-その点、`Pipenv` を使った環境では、何か起きたら仮想環境の削除→再作成を気軽に行うことができる。
+その点、`Poetry` を使った環境では、何か起きたら仮想環境の削除→再作成を気軽に行うことができる。
 また、各仮想環境は完全に独立しているので、「あるプロジェクトで起きた不具合が他に波及する」、といったことがなく安全だ。
-特段の理由がない限り、`Pipenv` で管理しておくのが良いだろう。
+特段の理由がない限り、`Poetry` で管理しておくのが良いだろう。
 
 #### `Pip` とは
 Python のパッケージを管理するためのツール。
