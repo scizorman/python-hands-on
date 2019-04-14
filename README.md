@@ -1,4 +1,8 @@
 # A研 Python 講習
+[![Python version](https://img.shields.io/badge/Python-3.7-blue.svg?style=for-the-badge)](https://docs.python.org/3/)
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+
+
 ## 目的
 - 基礎的な Python 開発能力の取得
 - 良いコードを書く練習
