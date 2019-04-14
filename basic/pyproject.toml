@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "basic-assignments"
 version = "0.1.0"
-description = "Basic assignments of A Lab Python workshop"
+description = "Basic assignments of A Lab Python hands on"
 authors = ["scizorman <tueda1207@gmail.com>"]
 
 [tool.poetry.dependencies]
