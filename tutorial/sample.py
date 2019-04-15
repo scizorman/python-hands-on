@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 def main():
-    print("Hello world!")
+    x=input("your name->")
+    print("{} Hello world!".format(x))
 
 
 if __name__ == "__main__":
