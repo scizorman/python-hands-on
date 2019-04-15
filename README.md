@@ -86,10 +86,14 @@ Linux において，Python の実行環境を管理するためのツール。
 $ brew install pipenv
 ```
 
-`Pipenv` がデフォルトで用いる Python を指定する
+`Pipenv` の設定を環境変数を用いて行う
 
 ```bash
-echo 'export PIPENV_PYTHON="$PYENV_ROOT/shims/python" >> ~/.bash_profile'
+# プロジェクト直下に仮想環境を構築する
+echo 'export PIPENV_VENV_IN_PROJECT=1' >> ~/.bash_profile
+# デフォルトで用いる Python を指定
+echo 'export PIPENV_PYTHON="$PYENV_ROOT/shims/python"' >> ~/.bash_profile
+
 source ~/.bash_profile
 ```
 
