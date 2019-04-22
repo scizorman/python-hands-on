@@ -9,6 +9,7 @@ jupyterlab = "*"
 [packages]
 matplotlib = "*"
 numpy = "*"
+bokeh = "*"
 
 [requires]
 python_version = "3.7"
