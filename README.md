@@ -1,6 +1,6 @@
 # Python ハンズオン
 
-[![Python version](https://img.shields.io/badge/Python-3.7-blue.svg?style=for-the-badge)](https://docs.python.org/3/)
+[![Python version](https://img.shields.io/badge/Python-3.8-blue.svg?style=for-the-badge)](https://docs.python.org/3/)
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
 ## 目的
@@ -63,11 +63,11 @@ $ echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
 $ source ~/.bash_profile
 ```
 
-`pyenv` を用いて，Python の最新バージョン (3.7.2) をインストール，およびセットアップを行う
+`pyenv` を用いて，Python の最新バージョン (3.8.2) をインストール，およびセットアップを行う
 
 ```bash
-$ pyenv install 3.7.2
-$ pyenv global 3.7.2
+$ pyenv install 3.8.2
+$ pyenv global 3.8.2
 $ pyenv rehash
 ```
 
