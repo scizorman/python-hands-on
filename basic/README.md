@@ -14,7 +14,7 @@ JupyterLab を用いて，ノートブックに書かれている課題に取り
 #### 1. Pipenv を用いて，実行環境の構築・必要なパッケージのインストールを行う
 
 ```bash
-$ pipenv --python=3.7.2
+$ pipenv --python=3.8.2
 $ pipenv install -d
 ```
 
